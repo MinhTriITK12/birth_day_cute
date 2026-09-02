@@ -235,9 +235,10 @@ const Screen5 = ({ onNext }) => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, x: -50, transition: { duration: 0.8 } }}
-      className="w-full h-full flex flex-col items-center p-6 pt-12 overflow-y-auto no-scrollbar relative"
+      className="w-full h-full overflow-y-auto no-scrollbar relative"
     >
-      <div className="w-full max-w-sm relative rounded-md shadow-2xl p-6 pb-20 mt-8 bg-[#e8dcc4] overflow-hidden">
+      <div className="w-full min-h-full flex flex-col items-center p-6 pt-12">
+        <div className="w-full max-w-sm relative rounded-md shadow-2xl p-6 pb-20 mt-8 bg-[#e8dcc4] overflow-hidden flex-shrink-0">
         {/* Paper texture overlay via image */}
         <div 
           className="absolute inset-0 opacity-40 mix-blend-multiply pointer-events-none"
@@ -255,10 +256,13 @@ const Screen5 = ({ onNext }) => {
         <div className="mt-28 font-handwriting text-2xl text-[#2c2825] leading-loose relative z-10 space-y-4">
           <p>Gửi cậu,</p>
           <p>
-            Thêm một tuổi mới rồi. Tuổi mới có thể sẽ có nhiều thử thách hơn, nhưng tớ mong cậu luôn giữ được nụ cười này. 
+            Cũng không biết từ khi nào tớ lại để ý đến cậu như vậy, từng buổi nói chuyện tâm sự thâu đêm lại càng gắn bó dần 2 trái tim hiu quạnh.
           </p>
           <p>
             Dù thế giới ngoài kia có bộn bề thế nào, hãy nhớ rằng luôn có một góc nhỏ bình yên ở đây đợi cậu.
+          </p>
+          <p>
+            Hy vọng cậu có thể đồng hành cùng tớ và trở thành một nửa bình yên cùng tớ nhé. Yêu cậu nhiều lắm &lt;3 .
           </p>
           <p className="text-right mt-8 mr-4">
             - Ký tên.
@@ -266,15 +270,16 @@ const Screen5 = ({ onNext }) => {
         </div>
       </div>
 
-      <motion.button 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2 }}
-        onClick={onNext}
-        className="mt-8 mb-8 text-cream/70 hover:text-gold transition-colors flex items-center gap-2"
-      >
-        Vẫn còn nữa ➔
-      </motion.button>
+        <motion.button 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 2 }}
+          onClick={onNext}
+          className="mt-8 mb-8 text-cream/70 hover:text-gold transition-colors flex items-center gap-2 flex-shrink-0"
+        >
+          Vẫn còn nữa ➔
+        </motion.button>
+      </div>
     </motion.div>
   );
 };
