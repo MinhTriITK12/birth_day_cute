@@ -25,7 +25,7 @@ const Screen1 = ({ onNext }) => {
       className="w-full h-full flex flex-col items-center justify-center p-6 text-center"
     >
       <div className="relative w-64 h-64 mb-10 mt-10">
-        <img src="/cake.png" alt="Birthday Cake" className="w-full h-full object-cover rounded-xl shadow-[0_0_50px_rgba(255,215,0,0.1)]" />
+        <img src="./cake.png" alt="Birthday Cake" className="w-full h-full object-cover rounded-xl shadow-[0_0_50px_rgba(255,215,0,0.1)]" />
         {flameVisible && (
           <motion.div 
             className="absolute top-[18%] left-[49%] -translate-x-1/2 w-4 h-12 bg-gradient-to-t from-yellow-300 via-orange-400 to-red-500 rounded-full blur-[2px] animate-flicker"
@@ -197,7 +197,7 @@ const Screen4 = ({ onNext }) => {
                     transition={{ delay: 1 + (rIdx * 0.1) + (cIdx * 0.05) }}
                     className="w-full h-full bg-maroon-800/50 rounded-sm overflow-hidden border border-cream/10 shadow-sm"
                   >
-                    <img src="/memory.png" className="w-full h-full object-cover opacity-70 hover:opacity-100 transition-opacity" alt="" />
+                    <img src="./memory.png" className="w-full h-full object-cover opacity-70 hover:opacity-100 transition-opacity" alt="" />
                   </motion.div>
                 ) : null}
               </div>
@@ -241,13 +241,13 @@ const Screen5 = ({ onNext }) => {
         {/* Paper texture overlay via image */}
         <div 
           className="absolute inset-0 opacity-40 mix-blend-multiply pointer-events-none"
-          style={{ backgroundImage: 'url(/paper.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+          style={{ backgroundImage: 'url(./paper.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
         ></div>
         
         {/* Polaroid at top */}
         <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-24 h-28 bg-white p-2 pb-6 shadow-md rotate-[-3deg] z-10 border border-gray-200">
           <div className="w-full h-full bg-gray-200 overflow-hidden">
-             <img src="/memory.png" className="w-full h-full object-cover grayscale opacity-80" alt="" />
+             <img src="./memory.png" className="w-full h-full object-cover grayscale opacity-80" alt="" />
           </div>
           <div className="absolute top-1 left-1/2 -translate-x-1/2 w-4 h-4 bg-red-400 rounded-full shadow-inner opacity-80 z-20" style={{boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.5)'}}></div>
         </div>
