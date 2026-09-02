@@ -17,7 +17,7 @@ export default {
       fontFamily: {
         serif: ['"Playfair Display"', 'serif'],
         sans: ['"Inter"', 'sans-serif'],
-        handwriting: ['"Caveat"', 'cursive'],
+        handwriting: ['"Dancing Script"', 'cursive'],
       },
     },
   },
