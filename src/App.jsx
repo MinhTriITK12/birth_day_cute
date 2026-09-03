@@ -265,7 +265,7 @@ const Screen5 = ({ onNext }) => {
             Hy vọng cậu có thể đồng hành cùng tớ và trở thành một nửa bình yên cùng tớ nhé. Yêu cậu nhiều lắm &lt;3 .
           </p>
           <p className="text-right mt-8 mr-4">
-            - Ký tên.
+            - Minh Trí.
           </p>
         </div>
       </div>
